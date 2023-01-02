@@ -22,7 +22,7 @@ RUN docker-php-ext-install gd
 
 RUN docker-php-ext-configure pcntl --enable-pcntl
 RUN docker-php-ext-install pcntl && docker-php-ext-enable pcntl
-
+RUN docker-php-ext-install soap
 
 RUN pecl install xdebug-3.1.1
 RUN docker-php-ext-enable xdebug
